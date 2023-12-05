@@ -102,5 +102,5 @@ FROM sakila.film f
 LEFT JOIN sakila.inventory i
 ON f.film_id = i.film_id
 GROUP BY (f.title)
-ORDER BY available_rental_copies ASC
+ORDER BY available_rental_copies DESC
 ;
